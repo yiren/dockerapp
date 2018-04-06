@@ -3,7 +3,7 @@ jobs:
   build:
     working_directory: /dockerapp
     docker:
-      - image: docker:17.05.0-ce-git
+      - image: circleci/python:3.6.1
     steps:
       - checkout
       - setup_remote_docker
